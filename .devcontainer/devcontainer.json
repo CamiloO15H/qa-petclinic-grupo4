@@ -1,5 +1,5 @@
 {
-  "name": "Java",
+  "name": "QA PetClinic - Grupo 4",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
@@ -8,9 +8,11 @@
     },
     "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
   },
-
   "customizations": {
     "vscode": {
       "settings": {},
@@ -21,5 +23,15 @@
       ]
     }
   },
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "forwardPorts": [
+    8080
+  ],
+  "portsAttributes": {
+    "8080": {
+      "label": "PetClinic",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "chmod +x mvnw && ./mvnw -q -DskipTests compile"
 }

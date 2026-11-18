@@ -1,0 +1,970 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< org.springframework.samples:spring-petclinic >------------
+[INFO] Building petclinic 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ spring-petclinic ---
+[INFO] Deleting C:\ITM\qa-petclinic-grupo4\target
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java) @ spring-petclinic ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- spring-javaformat:0.0.47:validate (default) @ spring-petclinic ---
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (nohttp-checkstyle-validation) @ spring-petclinic ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (default) @ spring-petclinic ---
+[INFO] argLine set to -javaagent:C:\\Users\\kmi20\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.15\\org.jacoco.agent-0.8.15-runtime.jar=destfile=C:\\ITM\\qa-petclinic-grupo4\\target\\jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id:9.2.0:revision (default) @ spring-petclinic ---
+[INFO] dotGitDirectory 'C:\ITM\qa-petclinic-grupo4\.git'
+[INFO] Collected git.build.user.name with value Camilo Ospina
+[INFO] Collected git.build.user.email with value 90734202+CamiloO15H@users.noreply.github.com
+[INFO] Collected git.branch with value main
+[INFO] Collected git.commit.id.describe with value 500158f
+[INFO] Collected git.commit.id.describe-short with value 500158f
+[INFO] Collected git.commit.id with value 500158f732419217507c7656904b8e6aa1bcc0d6
+[INFO] Collected git.commit.id.abbrev with value 500158f
+[INFO] Collected git.dirty with value false
+[INFO] Collected git.commit.user.name with value Pedro Arthur Hartmann
+[INFO] Collected git.commit.user.email with value pedroaphartmann@gmail.com
+[INFO] Collected git.commit.message.full with value added redirection to the page when the user types a page that is out of bounds
+
+Signed-off-by: Pedro Arthur Hartmann <pedroaphartmann@gmail.com>
+[INFO] Collected git.commit.message.short with value added redirection to the page when the user types a page that is out of bounds
+[INFO] Collected git.commit.time with value 2026-09-29T10:37:54-05:00
+[INFO] Collected git.commit.author.time with value 2026-09-29T09:36:27-05:00
+[INFO] Collected git.commit.committer.time with value 2026-09-29T10:37:54-05:00
+[INFO] Collected git.remote.origin.url with value https://github.com/CamiloO15H/qa-petclinic-grupo4.git
+[INFO] Collected git.tags with value 
+[INFO] Collected git.tag with value 
+[INFO] Collected git.closest.tag.name with value 
+[INFO] Collected git.closest.tag.commit.count with value 
+[INFO] Collected git.total.commit.count with value 1047
+[INFO] Collected git.local.branch.ahead with value 0
+[INFO] Collected git.local.branch.behind with value 0
+[INFO] Collected git.build.time with value 2024-11-28T09:37:52-05:00
+[INFO] Collected git.build.version with value 4.0.0-SNAPSHOT
+[INFO] Collected git.build.host with value PCam
+[INFO] including property 'git.tags' in results
+[INFO] including property 'git.build.version' in results
+[INFO] including property 'git.branch' in results
+[INFO] including property 'git.build.host' in results
+[INFO] including property 'git.commit.id' in results
+[INFO] including property 'git.commit.user.email' in results
+[INFO] including property 'git.local.branch.behind' in results
+[INFO] including property 'git.commit.author.time' in results
+[INFO] including property 'git.build.user.name' in results
+[INFO] including property 'git.dirty' in results
+[INFO] including property 'git.closest.tag.commit.count' in results
+[INFO] including property 'git.commit.user.name' in results
+[INFO] including property 'git.commit.id.abbrev' in results
+[INFO] including property 'git.commit.id.describe-short' in results
+[INFO] including property 'git.total.commit.count' in results
+[INFO] including property 'git.commit.id.describe' in results
+[INFO] including property 'git.build.user.email' in results
+[INFO] including property 'git.commit.message.short' in results
+[INFO] including property 'git.commit.committer.time' in results
+[INFO] including property 'git.tag' in results
+[INFO] including property 'git.closest.tag.name' in results
+[INFO] including property 'git.local.branch.ahead' in results
+[INFO] including property 'git.commit.time' in results
+[INFO] including property 'git.build.time' in results
+[INFO] including property 'git.commit.message.full' in results
+[INFO] including property 'git.remote.origin.url' in results
+[INFO] Writing properties file [C:\ITM\qa-petclinic-grupo4\target\classes\git.properties] (for project petclinic)...
+[INFO] 
+[INFO] --- spring-boot:4.1.0:build-info (default) @ spring-petclinic ---
+[INFO] 
+[INFO] --- cyclonedx:2.9.1:makeAggregateBom (default) @ spring-petclinic ---
+[INFO] CycloneDX: Resolving Dependencies
+[INFO] CycloneDX: Creating BOM version 1.6 with 106 component(s)
+[INFO] CycloneDX: Writing and validating BOM (JSON): C:\ITM\qa-petclinic-grupo4\target\classes\META-INF\sbom\application.cdx.json
+[WARNING] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[WARNING] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[INFO]            attaching as spring-petclinic-4.0.0-SNAPSHOT-cyclonedx.json
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-petclinic ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 47 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ spring-petclinic ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 30 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-petclinic ---
+[INFO] skip non existing resourceDirectory C:\ITM\qa-petclinic-grupo4\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ spring-petclinic ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 20 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-petclinic ---
+[WARNING]  Parameter 'systemProperties' is deprecated: use systemPropertyVariables instead
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.springframework.samples.petclinic.model.ValidatorTests
+20:58:19.727 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 9.1.0.Final
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 s -- in org.springframework.samples.petclinic.model.ValidatorTests
+20:58:20.161 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 2.0.5
+20:58:20.561 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+20:58:20.944 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+20:58:20.945 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:58:20.964 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 28.4.0
+  API Version: 1.51
+  Operating System: Docker Desktop
+  Total Memory: 15548 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+20:58:20.974 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+20:58:20.976 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:58:21.060 [main] INFO tc.testcontainers/ryuk:0.14.0 -- Creating container for image: testcontainers/ryuk:0.14.0
+20:58:21.134 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+20:58:21.278 [main] INFO tc.testcontainers/ryuk:0.14.0 -- Container testcontainers/ryuk:0.14.0 is starting: 9926ca905b2c2eec4f67a3aab3dbb0786387abf5e5c5367c8cbfa2e94e65264d
+20:58:21.657 [main] INFO tc.testcontainers/ryuk:0.14.0 -- Container testcontainers/ryuk:0.14.0 started in PT0.5968599S
+20:58:21.663 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+20:58:21.663 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:58:21.664 [main] INFO org.testcontainers.DockerClientFactory -- ?? Docker server version should be at least 1.6.0
+[INFO] Running org.springframework.samples.petclinic.MySqlIntegrationTests
+20:58:21.777 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.MySqlIntegrationTests]: MySqlIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:58:21.895 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.MySqlIntegrationTests
+20:58:22.006 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.MySqlIntegrationTests]: MySqlIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:58:22.009 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.MySqlIntegrationTests
+20:58:22.040 [main] INFO tc.mysql:9.7 -- Creating container for image: mysql:9.7
+20:58:22.108 [main] INFO tc.mysql:9.7 -- Container mysql:9.7 is starting: f5f143d575d296ee41388d6d7b1284773a16300fe469a17c97bfa815405bc9fc
+20:58:22.354 [main] INFO tc.mysql:9.7 -- Waiting for database connection to become available at jdbc:mysql://localhost:56641/test using query 'SELECT 1'
+20:58:29.763 [main] INFO tc.mysql:9.7 -- Container mysql:9.7 started in PT7.7228382S
+20:58:29.763 [main] INFO tc.mysql:9.7 -- Container is started (JDBC URL: jdbc:mysql://localhost:56641/test)
+20:58:29.814 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:30.129-05:00  INFO 36008 --- [           main] o.s.s.petclinic.MySqlIntegrationTests    : Starting MySqlIntegrationTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:30.131-05:00  INFO 36008 --- [           main] o.s.s.petclinic.MySqlIntegrationTests    : The following 1 profile is active: "mysql"
+2026-11-17T20:58:30.964-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-17T20:58:31.028-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2026-11-17T20:58:31.816-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-11-17T20:58:31.837-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-17T20:58:31.838-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-17T20:58:31.903-05:00  INFO 36008 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1736 ms
+2026-11-17T20:58:32.195-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-17T20:58:32.300-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e3d2d76
+2026-11-17T20:58:32.302-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-17T20:58:32.659-05:00  INFO 36008 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-17T20:58:32.722-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-11-17T20:58:33.249-05:00  INFO 36008 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-17T20:58:33.385-05:00  INFO 36008 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:56641/test]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.7.4
+	Default catalog/schema: test/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-17T20:58:34.553-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-17T20:58:34.560-05:00  INFO 36008 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-17T20:58:34.584-05:00  INFO 36008 --- [           main] tc.mysql:9.7                             : Creating container for image: mysql:9.7
+2026-11-17T20:58:34.656-05:00  INFO 36008 --- [           main] tc.mysql:9.7                             : Container mysql:9.7 is starting: 2799630da45d2e1fd4bfbf05085b7e49d773986f9abeb9088d0a9ee8ac7aa821
+2026-11-17T20:58:34.887-05:00  INFO 36008 --- [           main] tc.mysql:9.7                             : Waiting for database connection to become available at jdbc:mysql://localhost:60454/test using query 'SELECT 1'
+2026-11-17T20:58:41.933-05:00  INFO 36008 --- [           main] tc.mysql:9.7                             : Container mysql:9.7 started in PT7.349004S
+2026-11-17T20:58:41.933-05:00  INFO 36008 --- [           main] tc.mysql:9.7                             : Container is started (JDBC URL: jdbc:mysql://localhost:60454/test)
+2026-11-17T20:58:42.005-05:00  INFO 36008 --- [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-17T20:58:43.345-05:00  INFO 36008 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-11-17T20:58:43.432-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 60091 (http) with context path '/'
+2026-11-17T20:58:43.439-05:00  INFO 36008 --- [           main] o.s.s.petclinic.MySqlIntegrationTests    : Started MySqlIntegrationTests in 13.638 seconds (process running for 24.988)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\kmi20\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.10\byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-11-17T20:58:44.061-05:00  INFO 36008 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-17T20:58:44.061-05:00  INFO 36008 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-17T20:58:44.062-05:00  INFO 36008 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.39 s -- in org.springframework.samples.petclinic.MySqlIntegrationTests
+[INFO] Running org.springframework.samples.petclinic.owner.OwnerControllerTests
+2026-11-17T20:58:45.067-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:45.098-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+2026-11-17T20:58:45.099-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:45.105-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+2026-11-17T20:58:45.115-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:45.139-05:00  INFO 36008 --- [           main] o.s.s.p.owner.OwnerControllerTests       : Starting OwnerControllerTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:45.139-05:00  INFO 36008 --- [           main] o.s.s.p.owner.OwnerControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:45.562-05:00  INFO 36008 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-17T20:58:45.562-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-17T20:58:45.563-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-17T20:58:45.579-05:00  INFO 36008 --- [           main] o.s.s.p.owner.OwnerControllerTests       : Started OwnerControllerTests in 0.464 seconds (process running for 27.127)
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.959 s -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[INFO] Running org.springframework.samples.petclinic.owner.OwnerTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.springframework.samples.petclinic.owner.OwnerTests
+[INFO] Running org.springframework.samples.petclinic.owner.PetControllerTests
+2026-11-17T20:58:46.031-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.037-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests
+2026-11-17T20:58:46.038-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.043-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests
+2026-11-17T20:58:46.047-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:46.065-05:00  INFO 36008 --- [           main] o.s.s.p.owner.PetControllerTests         : Starting PetControllerTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:46.065-05:00  INFO 36008 --- [           main] o.s.s.p.owner.PetControllerTests         : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:46.259-05:00  INFO 36008 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-17T20:58:46.259-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-17T20:58:46.259-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-17T20:58:46.263-05:00  INFO 36008 --- [           main] o.s.s.p.owner.PetControllerTests         : Started PetControllerTests in 0.216 seconds (process running for 27.811)
+[INFO] Running org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+2026-11-17T20:58:46.346-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors]: ProcessUpdateFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.352-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+2026-11-17T20:58:46.352-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors]: ProcessUpdateFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.353-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.358-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessUpdateFormHasErrors
+[INFO] Running org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+2026-11-17T20:58:46.507-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors]: ProcessCreationFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.512-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+2026-11-17T20:58:46.512-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors]: ProcessCreationFormHasErrors does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.513-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.PetControllerTests]: PetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.517-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s -- in org.springframework.samples.petclinic.owner.PetControllerTests$ProcessCreationFormHasErrors
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.661 s -- in org.springframework.samples.petclinic.owner.PetControllerTests
+[INFO] Running org.springframework.samples.petclinic.owner.PetTypeFormatterTests
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in org.springframework.samples.petclinic.owner.PetTypeFormatterTests
+[INFO] Running org.springframework.samples.petclinic.owner.PetValidatorTests
+[INFO] Running org.springframework.samples.petclinic.owner.PetValidatorTests$ValidateHasErrors
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.springframework.samples.petclinic.owner.PetValidatorTests$ValidateHasErrors
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in org.springframework.samples.petclinic.owner.PetValidatorTests
+[INFO] Running org.springframework.samples.petclinic.owner.VisitControllerTests
+2026-11-17T20:58:46.729-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: VisitControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.734-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.VisitControllerTests
+2026-11-17T20:58:46.735-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: VisitControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:46.739-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.VisitControllerTests
+2026-11-17T20:58:46.743-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:46.759-05:00  INFO 36008 --- [           main] o.s.s.p.owner.VisitControllerTests       : Starting VisitControllerTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:46.759-05:00  INFO 36008 --- [           main] o.s.s.p.owner.VisitControllerTests       : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:46.878-05:00  INFO 36008 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-17T20:58:46.878-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-17T20:58:46.878-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-17T20:58:46.882-05:00  INFO 36008 --- [           main] o.s.s.p.owner.VisitControllerTests       : Started VisitControllerTests in 0.14 seconds (process running for 28.43)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 s -- in org.springframework.samples.petclinic.owner.VisitControllerTests
+[INFO] Running org.springframework.samples.petclinic.PetClinicConcurrencyTests
+2026-11-17T20:58:46.999-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicConcurrencyTests]: PetClinicConcurrencyTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:47.000-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicConcurrencyTests
+2026-11-17T20:58:47.001-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicConcurrencyTests]: PetClinicConcurrencyTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:47.002-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicConcurrencyTests
+2026-11-17T20:58:47.005-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:47.021-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicConcurrencyTests        : Starting PetClinicConcurrencyTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:47.021-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicConcurrencyTests        : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:47.165-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-17T20:58:47.177-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 3 JPA repository interfaces.
+2026-11-17T20:58:47.240-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-11-17T20:58:47.241-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-17T20:58:47.241-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-17T20:58:47.275-05:00  INFO 36008 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 253 ms
+2026-11-17T20:58:47.305-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-17T20:58:47.585-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn0: url=jdbc:h2:mem:1fc2fbfc-d773-40b4-b723-86a1d96fe0a9 user=SA
+2026-11-17T20:58:47.585-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-17T20:58:47.661-05:00  INFO 36008 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-17T20:58:47.679-05:00  INFO 36008 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-17T20:58:47.691-05:00  INFO 36008 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:1fc2fbfc-d773-40b4-b723-86a1d96fe0a9]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 1FC2FBFC-D773-40B4-B723-86A1D96FE0A9/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-17T20:58:47.793-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-17T20:58:47.794-05:00  INFO 36008 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-17T20:58:47.958-05:00  INFO 36008 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-11-17T20:58:47.974-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 60095 (http) with context path '/'
+2026-11-17T20:58:47.976-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicConcurrencyTests        : Started PetClinicConcurrencyTests in 0.972 seconds (process running for 29.524)
+2026-11-17T20:58:48.019-05:00  INFO 36008 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-17T20:58:48.019-05:00  INFO 36008 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-17T20:58:48.020-05:00  INFO 36008 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-17T20:58:48.156-05:00  WARN 36008 --- [o-auto-2-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-11-17T20:58:48.157-05:00  WARN 36008 --- [o-auto-2-exec-1] org.hibernate.orm.jdbc.error             : Violaci?n de indice de Unicidad ? Clave primaria: "PUBLIC.UNIQUE_OWNER_PET_NAME INDEX PUBLIC.UNIQUE_OWNER_PET_NAME_INDEX_2 ON PUBLIC.PETS(OWNER_ID NULLS FIRST, NAME NULLS FIRST) VALUES ( /* key:14 */ 1, CAST('ConcurrencyTestPet' AS VARCHAR_IGNORECASE(18)))"
+Unique index or primary key violation: "PUBLIC.UNIQUE_OWNER_PET_NAME INDEX PUBLIC.UNIQUE_OWNER_PET_NAME_INDEX_2 ON PUBLIC.PETS(OWNER_ID NULLS FIRST, NAME NULLS FIRST) VALUES ( /* key:14 */ 1, CAST('ConcurrencyTestPet' AS VARCHAR_IGNORECASE(18)))"; SQL statement:
+update pets set owner_id=? where id=? [23505-240]
+--- Concurrency Test Assertions ---
+Successful additions: 1
+Failed additions: 1
+Original Pet Count: 1
+Final Pet Count: 2
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.206 s -- in org.springframework.samples.petclinic.PetClinicConcurrencyTests
+[INFO] Running org.springframework.samples.petclinic.PetClinicIntegrationTests
+2026-11-17T20:58:48.205-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: PetClinicIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:48.207-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+2026-11-17T20:58:48.208-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: PetClinicIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:48.209-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+2026-11-17T20:58:48.212-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:48.228-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicIntegrationTests        : Starting PetClinicIntegrationTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:48.228-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:48.370-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-17T20:58:48.380-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 3 JPA repository interfaces.
+2026-11-17T20:58:48.437-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-11-17T20:58:48.438-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-17T20:58:48.438-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-17T20:58:48.464-05:00  INFO 36008 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 235 ms
+2026-11-17T20:58:48.486-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-11-17T20:58:48.489-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn10: url=jdbc:h2:mem:ded46df4-afbf-4c6c-ba49-b0c8084083b1 user=SA
+2026-11-17T20:58:48.489-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-11-17T20:58:48.516-05:00  INFO 36008 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-17T20:58:48.533-05:00  INFO 36008 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-17T20:58:48.534-05:00  INFO 36008 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:ded46df4-afbf-4c6c-ba49-b0c8084083b1]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DED46DF4-AFBF-4C6C-BA49-B0C8084083B1/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-17T20:58:48.583-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-17T20:58:48.584-05:00  INFO 36008 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-17T20:58:48.697-05:00  INFO 36008 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-11-17T20:58:48.710-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 60098 (http) with context path '/'
+2026-11-17T20:58:48.711-05:00  INFO 36008 --- [           main] o.s.s.p.PetClinicIntegrationTests        : Started PetClinicIntegrationTests in 0.499 seconds (process running for 30.26)
+2026-11-17T20:58:48.717-05:00 DEBUG 36008 --- [           main] org.hibernate.SQL                        : select v1_0.id,v1_0.first_name,v1_0.last_name from vets v1_0
+2026-11-17T20:58:48.720-05:00 DEBUG 36008 --- [           main] org.hibernate.SQL                        : select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+2026-11-17T20:58:48.730-05:00  INFO 36008 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-17T20:58:48.730-05:00  INFO 36008 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-17T20:58:48.731-05:00  INFO 36008 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-17T20:58:48.790-05:00 DEBUG 36008 --- [o-auto-3-exec-1] org.hibernate.SQL                        : select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\' fetch first ? rows only
+2026-11-17T20:58:48.796-05:00 DEBUG 36008 --- [o-auto-3-exec-1] org.hibernate.SQL                        : select p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from pets p1_0 left join types t1_0 on t1_0.id=p1_0.type_id where p1_0.owner_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by p1_0.name
+2026-11-17T20:58:48.798-05:00 DEBUG 36008 --- [o-auto-3-exec-1] org.hibernate.SQL                        : select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+2026-11-17T20:58:48.817-05:00 DEBUG 36008 --- [o-auto-3-exec-1] org.hibernate.SQL                        : select count(o1_0.id) from owners o1_0 where o1_0.last_name like ? escape '\'
+2026-11-17T20:58:48.868-05:00 DEBUG 36008 --- [o-auto-3-exec-2] org.hibernate.SQL                        : select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+2026-11-17T20:58:48.869-05:00 DEBUG 36008 --- [o-auto-3-exec-2] org.hibernate.SQL                        : select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+2026-11-17T20:58:48.871-05:00 DEBUG 36008 --- [o-auto-3-exec-2] org.hibernate.SQL                        : select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+2026-11-17T20:58:48.872-05:00 DEBUG 36008 --- [o-auto-3-exec-2] org.hibernate.SQL                        : select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.682 s -- in org.springframework.samples.petclinic.PetClinicIntegrationTests
+[INFO] Running org.springframework.samples.petclinic.PostgresIntegrationTests
+2026-11-17T20:58:48.889-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PostgresIntegrationTests]: PostgresIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:48.890-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PostgresIntegrationTests
+2026-11-17T20:58:48.891-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PostgresIntegrationTests]: PostgresIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:48.892-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PostgresIntegrationTests
+2026-11-17T20:58:48.899-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:48.916-05:00  INFO 36008 --- [           main] o.s.s.p.PostgresIntegrationTests         : Starting PostgresIntegrationTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:48.916-05:00  INFO 36008 --- [           main] o.s.s.p.PostgresIntegrationTests         : The following 1 profile is active: "postgres"
+2026-11-17T20:58:48.921-05:00  INFO 36008 --- [           main] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file C:\ITM\qa-petclinic-grupo4\docker-compose.yml
+2026-11-17T20:58:49.714-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Recreate
+2026-11-17T20:58:49.807-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Recreated
+2026-11-17T20:58:49.827-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Starting
+2026-11-17T20:58:50.047-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Started
+2026-11-17T20:58:50.047-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Waiting
+2026-11-17T20:58:50.550-05:00  INFO 36008 --- [utReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container qa-petclinic-grupo4-postgres-1  Healthy
+2026-11-17T20:58:52.116-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-17T20:58:52.125-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-11-17T20:58:52.164-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-11-17T20:58:52.165-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-17T20:58:52.165-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-17T20:58:52.206-05:00  INFO 36008 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 189 ms
+2026-11-17T20:58:52.234-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-11-17T20:58:52.339-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@6f2d3f6f
+2026-11-17T20:58:52.339-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-11-17T20:58:52.426-05:00  INFO 36008 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-17T20:58:52.440-05:00  INFO 36008 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-17T20:58:52.453-05:00  INFO 36008 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/petclinic]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.4
+	Default catalog/schema: petclinic/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-17T20:58:52.523-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-17T20:58:52.524-05:00  INFO 36008 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-17T20:58:52.619-05:00  INFO 36008 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-11-17T20:58:52.628-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 60111 (http) with context path '/'
+2026-11-17T20:58:52.630-05:00  INFO 36008 --- [           main] o.s.s.p.PostgresIntegrationTests         : Started PostgresIntegrationTests in 3.732 seconds (process running for 34.178)
+2026-11-17T20:58:52.660-05:00  INFO 36008 --- [o-auto-4-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-17T20:58:52.660-05:00  INFO 36008 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-17T20:58:52.661-05:00  INFO 36008 --- [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.806 s -- in org.springframework.samples.petclinic.PostgresIntegrationTests
+[INFO] Running org.springframework.samples.petclinic.service.ClinicServiceTests
+2026-11-17T20:58:52.696-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:52.710-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
+2026-11-17T20:58:52.710-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:52.717-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
+2026-11-17T20:58:52.720-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:52.732-05:00  INFO 36008 --- [           main] o.s.s.p.service.ClinicServiceTests       : Starting ClinicServiceTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:52.732-05:00  INFO 36008 --- [           main] o.s.s.p.service.ClinicServiceTests       : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:52.768-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-17T20:58:52.776-05:00  INFO 36008 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 3 JPA repository interfaces.
+2026-11-17T20:58:52.788-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-11-17T20:58:52.791-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn20: url=jdbc:h2:mem:69197a55-b6a8-4c9e-966c-69fe73e826ab user=SA
+2026-11-17T20:58:52.791-05:00  INFO 36008 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-11-17T20:58:52.809-05:00  INFO 36008 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-17T20:58:52.822-05:00  INFO 36008 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-17T20:58:52.823-05:00  INFO 36008 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:69197a55-b6a8-4c9e-966c-69fe73e826ab]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: 69197A55-B6A8-4C9E-966C-69FE73E826AB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-17T20:58:52.859-05:00  INFO 36008 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-17T20:58:52.859-05:00  INFO 36008 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-17T20:58:52.881-05:00  INFO 36008 --- [           main] o.s.s.p.service.ClinicServiceTests       : Started ClinicServiceTests in 0.161 seconds (process running for 34.429)
+Hibernate: select v1_0.id,v1_0.first_name,v1_0.last_name from vets v1_0
+Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+Hibernate: select p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from pets p1_0 left join types t1_0 on t1_0.id=p1_0.type_id where p1_0.owner_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+Hibernate: update pets set owner_id=? where id=?
+Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+Hibernate: update pets set owner_id=? where id=?
+2026-11-17T20:58:52.918-05:00  WARN 36008 --- [           main] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 23505, SQLState: 23505
+2026-11-17T20:58:52.918-05:00  WARN 36008 --- [           main] org.hibernate.orm.jdbc.error             : Violaci?n de indice de Unicidad ? Clave primaria: "PUBLIC.UNIQUE_OWNER_PET_NAME INDEX PUBLIC.UNIQUE_OWNER_PET_NAME_INDEX_2 ON PUBLIC.PETS(OWNER_ID NULLS FIRST, NAME NULLS FIRST) VALUES ( /* key:14 */ 1, CAST('DuplicatePetName' AS VARCHAR_IGNORECASE(16)))"
+Unique index or primary key violation: "PUBLIC.UNIQUE_OWNER_PET_NAME INDEX PUBLIC.UNIQUE_OWNER_PET_NAME_INDEX_2 ON PUBLIC.PETS(OWNER_ID NULLS FIRST, NAME NULLS FIRST) VALUES ( /* key:14 */ 1, CAST('DuplicatePetName' AS VARCHAR_IGNORECASE(16)))"; SQL statement:
+update pets set owner_id=? where id=? [23505-240]
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+Hibernate: insert into visits (visit_date,description,id) values (?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+Hibernate: insert into owners (address,city,first_name,last_name,telephone,id) values (?,?,?,?,?,default)
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone from owners o1_0 where o1_0.last_name like ? escape '\'
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id in (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by v1_0.visit_date
+Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+Hibernate: select pt1_0.id,pt1_0.name from types pt1_0 order by pt1_0.name
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+Hibernate: update pets set owner_id=? where id=?
+Hibernate: select o1_0.id,o1_0.address,o1_0.city,o1_0.first_name,o1_0.last_name,o1_0.telephone,p1_0.owner_id,p1_0.id,p1_0.birth_date,p1_0.name,t1_0.id,t1_0.name from owners o1_0 left join pets p1_0 on o1_0.id=p1_0.owner_id left join types t1_0 on t1_0.id=p1_0.type_id where o1_0.id=? order by p1_0.name
+Hibernate: select v1_0.pet_id,v1_0.id,v1_0.visit_date,v1_0.description from visits v1_0 where v1_0.pet_id=? order by v1_0.visit_date
+Hibernate: insert into pets (birth_date,name,type_id,id) values (?,?,?,default)
+Hibernate: update pets set owner_id=? where id=?
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.292 s -- in org.springframework.samples.petclinic.service.ClinicServiceTests
+[INFO] Running org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+2026-11-17T20:58:52.994-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:53.004-05:00  INFO 36008 --- [           main] .s.s.p.s.CrashControllerIntegrationTests : Starting CrashControllerIntegrationTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:53.004-05:00  INFO 36008 --- [           main] .s.s.p.s.CrashControllerIntegrationTests : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:53.109-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-11-17T20:58:53.110-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-17T20:58:53.110-05:00  INFO 36008 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-11-17T20:58:53.134-05:00  INFO 36008 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 129 ms
+2026-11-17T20:58:53.199-05:00  INFO 36008 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 0 endpoints beneath base path '/actuator'
+2026-11-17T20:58:53.206-05:00  INFO 36008 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 60117 (http) with context path '/'
+2026-11-17T20:58:53.209-05:00  INFO 36008 --- [           main] .s.s.p.s.CrashControllerIntegrationTests : Started CrashControllerIntegrationTests in 0.216 seconds (process running for 34.757)
+2026-11-17T20:58:53.220-05:00  INFO 36008 --- [o-auto-5-exec-1] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-17T20:58:53.220-05:00  INFO 36008 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-17T20:58:53.221-05:00  INFO 36008 --- [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-17T20:58:53.226-05:00 ERROR 36008 --- [o-auto-5-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown] with root cause
+
+java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown
+	at org.springframework.samples.petclinic.system.CrashController.triggerException(CrashController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-11-17T20:58:53.271-05:00 ERROR 36008 --- [o-auto-5-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown] with root cause
+
+java.lang.RuntimeException: Expected: controller used to showcase what happens when an exception is thrown
+	at org.springframework.samples.petclinic.system.CrashController.triggerException(CrashController.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.320 s -- in org.springframework.samples.petclinic.system.CrashControllerIntegrationTests
+[INFO] Running org.springframework.samples.petclinic.system.CrashControllerTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in org.springframework.samples.petclinic.system.CrashControllerTests
+[INFO] Running org.springframework.samples.petclinic.system.I18nPropertiesSyncTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in org.springframework.samples.petclinic.system.I18nPropertiesSyncTest
+[INFO] Running org.springframework.samples.petclinic.system.WelcomeControllerTests
+2026-11-17T20:58:53.329-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.system.WelcomeControllerTests]: WelcomeControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:53.336-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.system.CrashControllerIntegrationTests$TestConfiguration for test class org.springframework.samples.petclinic.system.WelcomeControllerTests
+2026-11-17T20:58:53.336-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.system.WelcomeControllerTests]: WelcomeControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:53.339-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.system.CrashControllerIntegrationTests$TestConfiguration for test class org.springframework.samples.petclinic.system.WelcomeControllerTests
+2026-11-17T20:58:53.342-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:53.353-05:00  INFO 36008 --- [           main] o.s.s.p.system.WelcomeControllerTests    : Starting WelcomeControllerTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:53.354-05:00  INFO 36008 --- [           main] o.s.s.p.system.WelcomeControllerTests    : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:53.417-05:00  INFO 36008 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-17T20:58:53.418-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-17T20:58:53.418-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-17T20:58:53.420-05:00  INFO 36008 --- [           main] o.s.s.p.system.WelcomeControllerTests    : Started WelcomeControllerTests in 0.078 seconds (process running for 34.968)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s -- in org.springframework.samples.petclinic.system.WelcomeControllerTests
+[INFO] Running org.springframework.samples.petclinic.vet.VetControllerTests
+2026-11-17T20:58:53.442-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: VetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:53.451-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.vet.VetControllerTests
+2026-11-17T20:58:53.454-05:00  INFO 36008 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.vet.VetControllerTests]: VetControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T20:58:53.458-05:00  INFO 36008 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.vet.VetControllerTests
+2026-11-17T20:58:53.461-05:00  INFO 36008 --- [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-17T20:58:53.472-05:00  INFO 36008 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : Starting VetControllerTests using Java 24.0.1 with PID 36008 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-17T20:58:53.473-05:00  INFO 36008 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T20:58:53.598-05:00  INFO 36008 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-17T20:58:53.598-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-17T20:58:53.598-05:00  INFO 36008 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-11-17T20:58:53.600-05:00  INFO 36008 --- [           main] o.s.s.petclinic.vet.VetControllerTests   : Started VetControllerTests in 0.139 seconds (process running for 35.148)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 s -- in org.springframework.samples.petclinic.vet.VetControllerTests
+[INFO] Running org.springframework.samples.petclinic.vet.VetTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in org.springframework.samples.petclinic.vet.VetTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 81, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.15:report (report) @ spring-petclinic ---
+[INFO] Loading execution data file C:\ITM\qa-petclinic-grupo4\target\jacoco.exec
+[INFO] Analyzed bundle 'petclinic' with 22 classes
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ spring-petclinic ---
+[INFO] Building jar: C:\ITM\qa-petclinic-grupo4\target\spring-petclinic-4.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:4.1.0:repackage (repackage) @ spring-petclinic ---
+[INFO] Replacing main artifact C:\ITM\qa-petclinic-grupo4\target\spring-petclinic-4.0.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\ITM\qa-petclinic-grupo4\target\spring-petclinic-4.0.0-SNAPSHOT.jar.original
+[INFO] 
+[INFO] ------------< org.springframework.samples:spring-petclinic >------------
+[INFO] Building petclinic 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- sonar:5.9.0.7382:sonar (default-cli) @ spring-petclinic ---
+[WARNING] Using an unspecified version instead of an explicit plugin version may introduce breaking analysis changes at an unwanted time. It is highly recommended to use an explicit version, e.g. 'org.sonarsource.scanner.maven:sonar-maven-plugin:5.9.0.7382'.
+[INFO] Java 24.0.1 Oracle Corporation (64-bit)
+[INFO] Windows 11 10.0 (amd64)
+[INFO] Communicating with SonarQube Community Build 26.11.0.134175
+[INFO] JRE provisioning: os[windows], arch[amd64]
+[INFO] Starting SonarScanner Engine...
+[INFO] Java 21.0.13 Eclipse Adoptium (64-bit)
+[INFO] Load global settings
+[INFO] Load global settings (done) | time=75ms
+[INFO] Server id: 147B411E-AaHsLy5lzk5tRC14vWHU
+[INFO] Loading required plugins
+[INFO] Load plugins index
+[INFO] Load plugins index (done) | time=13ms
+[INFO] Load/download plugins
+[INFO] Load/download plugins (done) | time=6ms
+[INFO] Load project settings for component key: 'qa-petclinic-grupo4'
+[INFO] Load project settings for component key: 'qa-petclinic-grupo4' (done) | time=13ms
+[INFO] Process project properties
+[INFO] Process project properties (done) | time=10ms
+[INFO] Project key: qa-petclinic-grupo4
+[INFO] Base dir: C:\ITM\qa-petclinic-grupo4
+[INFO] Working dir: C:\ITM\qa-petclinic-grupo4\target\sonar
+[INFO] Load quality profiles
+[INFO] Load quality profiles (done) | time=28ms
+[INFO] Load active rules
+[INFO] Load active rules (done) | time=161ms
+[INFO] Load analysis cache
+[INFO] Load analysis cache (404) | time=11ms
+[INFO] Preprocessing files...
+[INFO] 3 languages detected in 55 preprocessed files (done) | time=106ms
+[INFO] 0 files ignored because of scm ignore settings
+[INFO] Loading plugins for detected languages
+[INFO] Load/download plugins
+[INFO] Load/download plugins (done) | time=809ms
+[INFO] Load project repositories
+[INFO] Load project repositories (done) | time=81ms
+[INFO] Indexing files...
+[INFO] Project configuration:
+[INFO] 55 files indexed (done) | time=13ms
+[INFO] Quality profile for java: Sonar way core
+[INFO] Quality profile for xml: Sonar way core
+[INFO] Quality profile for yaml: Sonar way comprehensive
+[INFO] ------------- Run sensors on module petclinic
+[INFO] Load metrics repository
+[INFO] Load metrics repository (done) | time=17ms
+[INFO] Sensor IaC YAML File Type Classification Sensor [iac]
+[INFO] Sensor IaC YAML File Type Classification Sensor [iac] (done) | time=7ms
+[INFO] Sensor JavaSensor [java]
+[INFO] Configured Java source version (sonar.java.source): 17, preview features enabled (sonar.java.enablePreview): false
+[INFO] Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+[INFO] Using ECJ batch to parse 30 Main java source files with batch size 417 KB.
+[INFO] Starting batch processing.
+[INFO] The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+[INFO] 100% analyzed
+[INFO] Batch processing: Done.
+[INFO] Did not optimize analysis for any files, performed a full analysis for all 30 files.
+[INFO] Using ECJ batch to parse 20 Test java source files with batch size 417 KB.
+[INFO] Starting batch processing.
+[INFO] 100% analyzed
+[INFO] Batch processing: Done.
+[INFO] Did not optimize analysis for any files, performed a full analysis for all 20 files.
+[INFO] No "Generated" source files to scan.
+[INFO] Sensor JavaSensor [java] (done) | time=1960ms
+[INFO] Sensor JaCoCo XML Report Importer [jacoco]
+[INFO] 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+[INFO] Importing 1 report(s). Turn your logs in debug mode in order to see the exhaustive list.
+[INFO] Sensor JaCoCo XML Report Importer [jacoco] (done) | time=62ms
+[INFO] Sensor IaC CloudFormation Sensor [iac]
+[INFO] There are no files to be analyzed for the CloudFormation language
+[INFO] Sensor IaC CloudFormation Sensor [iac] (done) | time=1ms
+[INFO] Sensor IaC cfn-lint report Sensor [iac]
+[INFO] Sensor IaC cfn-lint report Sensor [iac] (done) | time=1ms
+[INFO] Sensor IaC Kustomization Sensor [iac]
+[INFO] Sensor IaC Kustomization Sensor [iac] (done) | time=0ms
+[INFO] Sensor IaC hadolint report Sensor [iac]
+[INFO] Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+[INFO] Sensor Java Config Sensor [iac]
+[INFO] There are no files to be analyzed for the Java language
+[INFO] Sensor Java Config Sensor [iac] (done) | time=0ms
+[INFO] Sensor IaC Docker Sensor [iac]
+[INFO] There are no files to be analyzed for the Docker language
+[INFO] Sensor IaC Docker Sensor [iac] (done) | time=5ms
+[INFO] Sensor SurefireSensor [java]
+[INFO] parsing [C:\ITM\qa-petclinic-grupo4\target\surefire-reports]
+[INFO] Sensor SurefireSensor [java] (done) | time=207ms
+[INFO] Sensor XML Sensor [xml]
+[INFO] 1 source file to be analyzed
+[INFO] 1/1 source file has been analyzed
+[INFO] Sensor XML Sensor [xml] (done) | time=105ms
+[INFO] Sensor IaC Kubernetes Sensor [iac]
+[INFO] There are no files to be analyzed for the Kubernetes language
+[INFO] Sensor IaC Kubernetes Sensor [iac] (done) | time=41ms
+[INFO] Sensor TextAndSecretsSensor [text]
+[INFO] Available processors: 16
+[INFO] Using 16 threads for analysis.
+[INFO] Start fetching files for the text and secrets analysis
+[INFO] Using Git CLI to retrieve dirty files
+[INFO] Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+[INFO] Starting the text and secrets analysis
+[INFO] 55 source files to be analyzed for the text and secrets analysis
+[INFO] 55/55 source files have been analyzed for the text and secrets analysis
+[INFO] Sensor TextAndSecretsSensor [text] (done) | time=448ms
+[INFO] ------------- Run sensors on project
+[INFO] Sensor JaCoCo Aggregate XML Report Importer [jacoco]
+[INFO] Sensor JaCoCo Aggregate XML Report Importer [jacoco] (done) | time=0ms
+[INFO] Sensor JavaScript/TypeScript/CSS analysis [javascript]
+[INFO] No input files found for analysis
+[INFO] Hit the cache for 0 out of 0
+[INFO] Miss the cache for 0 out of 0
+[INFO] Sensor JavaScript/TypeScript/CSS analysis [javascript] (done) | time=6ms
+[INFO] Sensor IaC Project Sensor [iac]
+[INFO] Sensor IaC Project Sensor [iac] (done) | time=1ms
+[INFO] Sensor Java SpringContextModelSensor [java]
+[INFO] Sensor Java SpringContextModelSensor [java] (done) | time=16ms
+[INFO] Sensor Zero Coverage Sensor
+[INFO] Sensor Zero Coverage Sensor (done) | time=3ms
+[INFO] Sensor Java CPD Block Indexer
+[INFO] Sensor Java CPD Block Indexer (done) | time=22ms
+[INFO] Sensor JavaProjectSensor [java]
+[INFO] Sensor JavaProjectSensor [java] (done) | time=2ms
+[INFO] ------------- Gather SCA dependencies on project
+[INFO] Dependency analysis skipped
+[INFO] SCM Publisher SCM provider for this project is: git
+[INFO] SCM Publisher 51 source files to be analyzed
+[INFO] SCM Publisher 51/51 source files have been analyzed (done) | time=798ms
+[INFO] CPD Executor 16 files had no CPD blocks
+[INFO] CPD Executor Calculating CPD for 14 files
+[INFO] CPD Executor CPD calculation finished (done) | time=7ms
+[INFO] SCM revision ID '500158f732419217507c7656904b8e6aa1bcc0d6'
+[INFO] Analysis report generated in 80ms, dir size=473.2 kB
+[INFO] Analysis report compressed in 1282ms, zip size=209.6 kB
+[INFO] Analysis report uploaded in 72ms
+[INFO] ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=qa-petclinic-grupo4
+[INFO] Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[INFO] More about the report processing at http://localhost:9000/api/ce/task?id=1c667fa7-9846-4b87-8b71-d898df8a95be
+[INFO] Analysis total time: 9.877 s
+[INFO] SonarScanner Engine completed successfully
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  57.203 s
+[INFO] Finished at: 2026-11-17T20:59:08-05:00
+[INFO] ------------------------------------------------------------------------
