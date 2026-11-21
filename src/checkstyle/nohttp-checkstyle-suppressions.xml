@@ -8,4 +8,7 @@
 	<suppress files="build[\\/].*" checks=".*"/>
 	<suppress files="target[\\/].*" checks=".*"/>
 	<suppress files=".+\.(jar|git|ico|p12|gif|jks|jpg|svg|log)" checks="NoHttp"/>
+	<!-- Grupo 4: reportes de evidencia (ZAP, k6) y documentación del caso práctico; no son código fuente -->
+	<suppress files="evidencias[\\/].*" checks="NoHttp"/>
+	<suppress files="docs[\\/].*" checks="NoHttp"/>
 </suppressions>

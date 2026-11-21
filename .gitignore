@@ -49,3 +49,5 @@ _site/
 
 # Caché local del escáner de SonarQube
 .sonar/
+# Archivos que guarda la app de escritorio de Claude
+Claude outputs/
