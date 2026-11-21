@@ -1,0 +1,60 @@
+Unable to find image 'grafana/k6:latest' locally
+latest: Pulling from grafana/k6
+4f4fb700ef54: Pulling fs layer
+e2de96513ba9: Pulling fs layer
+b46f6d67c0bc: Pulling fs layer
+2fdc73d4d0db: Pulling fs layer
+4f4fb700ef54: Already exists
+4f4fb700ef54: Pull complete
+b46f6d67c0bc: Download complete
+e2de96513ba9: Download complete
+b46f6d67c0bc: Pull complete
+e2de96513ba9: Pull complete
+2fdc73d4d0db: Download complete
+2fdc73d4d0db: Pull complete
+Digest: sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e
+Status: Downloaded newer image for grafana/k6:latest
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.99' rate=100.00%
+
+    http_req_duration
+    ✓ 'p(95)<3000' p(95)=11.43ms
+
+    http_req_failed
+    ✓ 'rate<0.01' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1375    11.335059/s
+    checks_succeeded...: 100.00% 1375 out of 1375
+    checks_failed......: 0.00%   0 out of 1375
+
+    ✓ inicio: HTTP 200
+    ✓ listar dueños: HTTP 200
+    ✓ buscar Davis: HTTP 200
+    ✓ ficha dueño 1: HTTP 200
+    ✓ veterinarios: HTTP 200
+
+    HTTP
+    http_req_duration..............: avg=8.16ms min=4.72ms med=7.58ms max=133.72ms p(90)=10.34ms p(95)=11.43ms
+      { expected_response:true }...: avg=8.16ms min=4.72ms med=7.58ms max=133.72ms p(90)=10.34ms p(95)=11.43ms
+    http_req_failed................: 0.00%  0 out of 1375
+    http_reqs......................: 1375   11.335059/s
+
+    EXECUTION
+    iteration_duration.............: avg=5.04s  min=5.03s  med=5.04s  max=5.23s    p(90)=5.05s   p(95)=5.05s  
+    iterations.....................: 275    2.267012/s
+    vus............................: 1      min=1         max=20
+    vus_max........................: 20     min=20        max=20
+
+    NETWORK
+    data_received..................: 5.4 MB 44 kB/s
+    data_sent......................: 126 kB 1.0 kB/s
+
+
+
