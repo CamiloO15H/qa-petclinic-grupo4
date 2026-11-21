@@ -1,0 +1,217 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< org.springframework.samples:spring-petclinic >------------
+[INFO] Building petclinic 4.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.6.3:enforce (enforce-java) @ spring-petclinic ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- spring-javaformat:0.0.47:validate (default) @ spring-petclinic ---
+[INFO] 
+[INFO] --- checkstyle:3.6.0:check (nohttp-checkstyle-validation) @ spring-petclinic ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- jacoco:0.8.15:prepare-agent (default) @ spring-petclinic ---
+[INFO] argLine set to -javaagent:C:\\Users\\kmi20\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.15\\org.jacoco.agent-0.8.15-runtime.jar=destfile=C:\\ITM\\qa-petclinic-grupo4\\target\\jacoco.exec
+[INFO] 
+[INFO] --- git-commit-id:9.2.0:revision (default) @ spring-petclinic ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcutil-jdk18on/maven-metadata.xml
+Progress (1): 942 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcutil-jdk18on/maven-metadata.xml (942 B at 1.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/maven-metadata.xml
+Progress (1): 974 B                   Downloaded from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk18on/maven-metadata.xml (974 B at 7.2 kB/s)
+[INFO] dotGitDirectory 'C:\ITM\qa-petclinic-grupo4\.git'
+[INFO] Collected git.build.user.name with value Camilo Ospina
+[INFO] Collected git.build.user.email with value 90734202+CamiloO15H@users.noreply.github.com
+[INFO] Collected git.branch with value fix/def-01-mass-assignment
+[INFO] Collected git.commit.id.describe with value 93c06a4-dirty
+[INFO] Collected git.commit.id.describe-short with value 93c06a4-dirty
+[INFO] Collected git.commit.id with value 93c06a4105c59875bb0a77d850992e8a8c9b790a
+[INFO] Collected git.commit.id.abbrev with value 93c06a4
+[INFO] Collected git.dirty with value true
+[INFO] Collected git.commit.user.name with value Camilo Ospina
+[INFO] Collected git.commit.user.email with value 90734202+CamiloO15H@users.noreply.github.com
+[INFO] Collected git.commit.message.full with value Build: excluir evidencias y docs de la validación nohttp (el build fallaba con los reportes de ZAP)
+[INFO] Collected git.commit.message.short with value Build: excluir evidencias y docs de la validación nohttp (el build fallaba con los reportes de ZAP)
+[INFO] Collected git.commit.time with value 2026-11-21T12:12:46-05:00
+[INFO] Collected git.commit.author.time with value 2026-11-21T12:12:46-05:00
+[INFO] Collected git.commit.committer.time with value 2026-11-21T12:12:46-05:00
+[INFO] Collected git.remote.origin.url with value https://github.com/CamiloO15H/qa-petclinic-grupo4.git
+[INFO] Collected git.tags with value 
+[INFO] Collected git.tag with value 
+[INFO] Collected git.closest.tag.name with value 
+[INFO] Collected git.closest.tag.commit.count with value 
+[INFO] Collected git.total.commit.count with value 1051
+[INFO] Collected git.local.branch.ahead with value NO_REMOTE
+[INFO] Collected git.local.branch.behind with value NO_REMOTE
+[INFO] Collected git.build.time with value 2024-11-28T09:37:52-05:00
+[INFO] Collected git.build.version with value 4.0.0-SNAPSHOT
+[INFO] Collected git.build.host with value PCam
+[INFO] including property 'git.tags' in results
+[INFO] including property 'git.build.version' in results
+[INFO] including property 'git.branch' in results
+[INFO] including property 'git.build.host' in results
+[INFO] including property 'git.commit.id' in results
+[INFO] including property 'git.commit.user.email' in results
+[INFO] including property 'git.local.branch.behind' in results
+[INFO] including property 'git.commit.author.time' in results
+[INFO] including property 'git.build.user.name' in results
+[INFO] including property 'git.dirty' in results
+[INFO] including property 'git.closest.tag.commit.count' in results
+[INFO] including property 'git.commit.user.name' in results
+[INFO] including property 'git.commit.id.abbrev' in results
+[INFO] including property 'git.commit.id.describe-short' in results
+[INFO] including property 'git.total.commit.count' in results
+[INFO] including property 'git.commit.id.describe' in results
+[INFO] including property 'git.build.user.email' in results
+[INFO] including property 'git.commit.message.short' in results
+[INFO] including property 'git.commit.committer.time' in results
+[INFO] including property 'git.tag' in results
+[INFO] including property 'git.closest.tag.name' in results
+[INFO] including property 'git.local.branch.ahead' in results
+[INFO] including property 'git.commit.time' in results
+[INFO] including property 'git.build.time' in results
+[INFO] including property 'git.commit.message.full' in results
+[INFO] including property 'git.remote.origin.url' in results
+[INFO] Reading existing properties file [C:\ITM\qa-petclinic-grupo4\target\classes\git.properties] (for project petclinic)...
+[INFO] Writing properties file [C:\ITM\qa-petclinic-grupo4\target\classes\git.properties] (for project petclinic)...
+[INFO] 
+[INFO] --- spring-boot:4.1.0:build-info (default) @ spring-petclinic ---
+[INFO] 
+[INFO] --- cyclonedx:2.9.1:makeAggregateBom (default) @ spring-petclinic ---
+[INFO] CycloneDX: Resolving Dependencies
+[INFO] CycloneDX: Creating BOM version 1.6 with 106 component(s)
+[INFO] CycloneDX: Writing and validating BOM (JSON): C:\ITM\qa-petclinic-grupo4\target\classes\META-INF\sbom\application.cdx.json
+[WARNING] Unknown keyword meta:enum - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[WARNING] Unknown keyword deprecated - you should define your own Meta Schema. If the keyword is irrelevant for validation, just use a NonValidationKeyword or if it should generate annotations AnnotationKeyword
+[INFO]            attaching as spring-petclinic-4.0.0-SNAPSHOT-cyclonedx.json
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ spring-petclinic ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 47 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ spring-petclinic ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ spring-petclinic ---
+[INFO] skip non existing resourceDirectory C:\ITM\qa-petclinic-grupo4\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ spring-petclinic ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 20 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ spring-petclinic ---
+[WARNING]  Parameter 'systemProperties' is deprecated: use systemPropertyVariables instead
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.springframework.samples.petclinic.owner.OwnerControllerTests
+12:13:42.774 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:13:43.169 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+12:13:43.178 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.OwnerControllerTests]: OwnerControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:13:43.190 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.OwnerControllerTests
+12:13:43.297 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 4.1.0
+
+
+2026-11-21T12:13:43.745-05:00  INFO 29656 --- [           main] o.s.s.p.owner.OwnerControllerTests       : Starting OwnerControllerTests using Java 24.0.1 with PID 29656 (started by kmi20 in C:\ITM\qa-petclinic-grupo4)
+2026-11-21T12:13:43.747-05:00  INFO 29656 --- [           main] o.s.s.p.owner.OwnerControllerTests       : No active profile set, falling back to 1 default profile: "default"
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\kmi20\.m2\repository\net\bytebuddy\byte-buddy-agent\1.18.10\byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-11-21T12:13:45.932-05:00  INFO 29656 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-21T12:13:45.933-05:00  INFO 29656 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-21T12:13:45.934-05:00  INFO 29656 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-21T12:13:45.957-05:00  INFO 29656 --- [           main] o.s.s.p.owner.OwnerControllerTests       : Started OwnerControllerTests in 2.675 seconds (process running for 4.521)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /owners/1/edit
+       Parameters = {firstName=[George], lastName=[Franklin], address=[110 W. Liberty St.], city=[Madison], telephone=[6085551023], pets[0].birthDate=[2099-01-01]}
+          Headers = []
+             Body = null
+    Session Attrs = {org.springframework.web.servlet.support.SessionFlashMapManager.FLASH_MAPS=[FlashMap [attributes={message=Owner Values Updated}, targetRequestPath=/owners/1, targetRequestParams={}]]}
+
+Handler:
+             Type = org.springframework.samples.petclinic.owner.OwnerController
+           Method = org.springframework.samples.petclinic.owner.OwnerController#processUpdateOwnerForm(Owner, BindingResult, int, RedirectAttributes)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:/owners/{ownerId}
+             View = null
+            Model = null
+
+FlashMap:
+        Attribute = message
+            value = Owner Values Updated
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Content-Language:"en", Location:"/owners/1"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /owners/1
+          Cookies = []
+[ERROR] Tests run: 19, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.700 s <<< FAILURE! -- in org.springframework.samples.petclinic.owner.OwnerControllerTests
+[ERROR] org.springframework.samples.petclinic.owner.OwnerControllerTests.processUpdateOwnerFormIgnoresNestedPetFields -- Time elapsed: 0.076 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: 2026-11-21 (java.time.LocalDate)
+ but was: 2099-01-01 (java.time.LocalDate)
+	at org.springframework.samples.petclinic.owner.OwnerControllerTests.processUpdateOwnerFormIgnoresNestedPetFields(OwnerControllerTests.java:317)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   OwnerControllerTests.processUpdateOwnerFormIgnoresNestedPetFields:317 
+expected: 2026-11-21 (java.time.LocalDate)
+ but was: 2099-01-01 (java.time.LocalDate)
+[INFO] 
+[ERROR] Tests run: 19, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  21.444 s
+[INFO] Finished at: 2026-11-21T12:13:47-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project spring-petclinic: There are test failures.
+[ERROR] 
+[ERROR] See C:\ITM\qa-petclinic-grupo4\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

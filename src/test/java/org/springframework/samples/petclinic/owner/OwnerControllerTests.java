@@ -19,6 +19,7 @@ package org.springframework.samples.petclinic.owner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.DisabledInNativeImage;
+import org.mockito.ArgumentCaptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.data.domain.Page;
@@ -33,6 +34,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.empty;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasItem;
@@ -293,6 +295,26 @@ class OwnerControllerTests {
 			.andExpect(model().attribute("owner",
 					hasProperty("pets", hasItem(hasProperty("visits", hasSize(greaterThan(0)))))))
 			.andExpect(view().name("owners/ownerDetails"));
+	}
+
+	/**
+	 * Regresión DEF-01 (Issue #1): el formulario de edición del dueño no debe permitir
+	 * modificar campos anidados de las mascotas (asignación masiva, CWE-915).
+	 */
+	@Test
+	void processUpdateOwnerFormIgnoresNestedPetFields() throws Exception {
+		mockMvc
+			.perform(post("/owners/{ownerId}/edit", TEST_OWNER_ID).param("firstName", "George")
+				.param("lastName", "Franklin")
+				.param("address", "110 W. Liberty St.")
+				.param("city", "Madison")
+				.param("telephone", "6085551023")
+				.param("pets[0].birthDate", "2099-01-01"))
+			.andExpect(status().is3xxRedirection());
+
+		ArgumentCaptor<Owner> saved = ArgumentCaptor.forClass(Owner.class);
+		verify(this.owners).save(saved.capture());
+		assertThat(saved.getValue().getPet("Max").getBirthDate()).isEqualTo(LocalDate.now());
 	}
 
 	@Test
