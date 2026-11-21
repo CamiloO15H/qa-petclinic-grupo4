@@ -58,7 +58,10 @@ class OwnerController {
 
 	@InitBinder
 	public void setAllowedFields(WebDataBinder dataBinder) {
-		dataBinder.setDisallowedFields("id", "*.id");
+		// DEF-01 (Issue #1): lista blanca de campos editables del dueño. Evita la
+		// asignación
+		// masiva de campos anidados como pets[0].birthDate (CWE-915).
+		dataBinder.setAllowedFields("firstName", "lastName", "address", "city", "telephone");
 	}
 
 	@ModelAttribute("owner")
